@@ -87,7 +87,7 @@ function replacer(htmlDocument){
 function responcePage(req, res){
     //ページ名の解釈
     if (req.url == '/') {
-        filePath = '\\index.html';
+        filePath = settings.params.home;
     } else {
         filePath = req.url;
     }
