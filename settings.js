@@ -2,9 +2,10 @@ const fs = require('fs');
 const DEBUG_FLAG = true;
 
 exports.params = {
-    "voteFile" : DEBUG_FLAG ? "./debug_result.json" : "./activeVote.json",
-    "archive"  : DEBUG_FLAG ? "./archives/testLog.json" : "./archives/Log.json",
-    "port"     : 3000
+    "voteFile" : DEBUG_FLAG ? "./test/test_result.json" : "./activeVote.json",
+    "archive"  : DEBUG_FLAG ? "./test/testLog.json" : "./archives/Log.json",
+    "port"     : 3000,
+    "home"     : DEBUG_FLAG ? "\\test/index.html" : "\\index.html"
 }
 
 exports.getVoteJson = function(){
