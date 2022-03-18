@@ -1,0 +1,2 @@
+exports.action = function(param){
+}
