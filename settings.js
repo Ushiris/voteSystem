@@ -1,11 +1,12 @@
 const fs = require('fs');
-const DEBUG_FLAG = true;
+const DEBUG_FLAG = false;
 
 exports.params = {
-    "voteFile" : DEBUG_FLAG ? "./test/test_result.json" : "./activeVote.json",
-    "archive"  : DEBUG_FLAG ? "./test/testLog.json" : "./archives/Log.json",
+    "isDebug"  : DEBUG_FLAG,
+    "voteFile" : DEBUG_FLAG ? "./test/test_result.json" : "./voteData/voteList.json",
+    "archive"  : DEBUG_FLAG ? "./test/testLog.json" : "./voteData/archives.json",
     "port"     : 3000,
-    "home"     : DEBUG_FLAG ? "\\test/index.html" : "\\index.html",
+    "home"     : DEBUG_FLAG ? "\\test\\index.html" : "\\index.html",
     "MIME"     : {
         ".html" : "text/html",
         ".css"  : "text/css",
@@ -17,7 +18,7 @@ exports.params = {
         "vote"       : require('./actions/vote').action,
         "checkClose" : require('./actions/checkClose').action,
         "question"   : require('./actions/question').action,
-        //ここで機能の登録を行う
+        //ここで機能の追加を行う
         "load"       : (()=>{})
     }
 }

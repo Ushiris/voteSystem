@@ -1,3 +1,4 @@
+// @ts-nocheck
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import * as React from 'react';
@@ -31,6 +32,7 @@ export default props => {
                     orientation="vertical"
                     getAriaValueText={valuetext}
                     defaultValue={20}
+                    // @ts-ignore
                     size="large"
                     sx={{ height: 300 }}
                 />

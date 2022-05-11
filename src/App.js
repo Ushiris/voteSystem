@@ -1,14 +1,12 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import * as React from 'react';
 import Grid from '@mui/material/Grid';
-import Classes from './App.css';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Menu from './components/Menu';
 import Vote from './components/Vote';
-import { jsx, css } from '@emotion/react'
+import { jsx } from '@emotion/react'
 
 
 const q_date = [
