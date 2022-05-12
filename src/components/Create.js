@@ -20,14 +20,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function ButtonAppBar() {
-    // @ts-ignore
     const classes = useStyles();
     return (
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <MenuIcon open={false} />
+                        <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
                         News

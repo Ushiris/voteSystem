@@ -1,16 +1,5 @@
-
-.slider{
-  border:1px solid black;
-}
-
-
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 25px;
-  top: 18px;
+.slider {
+  border: 1px solid black;
 }
 
 /* Color/shape of burger icon bars */
