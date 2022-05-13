@@ -4,11 +4,21 @@ import '../style.css';
 
 export default props => {
   return (
-    <Menu {...props}>
-      <a href="/">テスト</a>
-      <a href="/">Menu1</a>
-      <a href="/">Menu2</a>
-      <a href="/">Menu3</a>
+    <Menu {...props}
+      styles={styles}
+    >
+      <a href="#" onClick={() => { alert("新規作成") }}>新規作成</a>
     </Menu>
   );
 };
+
+const styles = {
+  bmBurgerButton: {
+    position: 'fixed',
+    width: '36px',
+    height: '30px',
+    left: '36px',
+    top: '20px'
+  },
+
+}
